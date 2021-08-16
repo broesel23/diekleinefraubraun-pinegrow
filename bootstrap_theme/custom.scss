@@ -1,0 +1,112 @@
+/* Pinegrow generated Theme Init Begin */
+$primary: #000000;
+$secondary: #f098bc;
+$info: #17a2b8;
+$success: #28a745;
+$warning: #ffc107;
+$danger: #dc3545;
+$white: white;
+$light: #f8f9fa;
+$dark: #343a40;
+$font-family-sans-serif: "Courier New", Courier, monospace;
+$headings-font-family: "Courier New", Courier, monospace;
+$headings-color: $secondary;
+
+html {
+    font-size: 100% !important;
+}
+
+$grid-gutter-width: 30px;
+$border-radius: 1rem;
+$border-radius-lg: 1.2rem;
+$border-radius-sm: 0.8rem;
+$dropdown-border-radius: .25rem !default;
+$btn-border-radius: 0.25rem;
+$btn-border-radius-lg: 0.3rem;
+$btn-border-radius-sm: 0.2rem;
+$enable-shadows: false;
+$enable-responsive-font-sizes: true;
+$enable-gradients: false;
+$min-contrast-ratio: 4.5;
+$gray-700: #495057;
+$black: #000;
+$blue: #007bff;
+$primary: #000000;
+$link-color: $primary;
+$link-hover-color: $secondary;
+$nav-tabs-link-active-color: $secondary;
+$navbar-light-hover-color: $secondary;
+$navbar-light-active-color: $secondary;
+$navbar-dark-hover-color: $secondary;
+$navbar-dark-active-color: $secondary;
+
+h1 {
+    color: $secondary !important;
+}
+
+h2 {
+    color: $secondary !important;
+}
+
+h3 {
+    color: $secondary !important;
+}
+
+h4 {
+    color: $secondary !important;
+}
+
+body,
+html {
+    min-height: 100vh;
+}
+
+/* Pinegrow generated Theme Init End */
+/* Bootstrap theme customized with Pinegrow Web Editor */
+/* Vars go before the @import */
+/* Click on the Uncomment icon in the Style panel to uncomment and customize the variables: */
+// $primary: #007bff;
+// $secondary: #6c757d;
+// $success: #28a745;
+// $info: #17a2b8;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #343a40;
+// $body-bg: #ffffff;
+// $body-color: #212529;
+/* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
+// $font-family-sans-serif: 'Lato', sans-serif;
+// $headings-font-family: 'Playfair Display', serif;
+@import "bootstrap/bootstrap";
+
+/* Custom CSS rules come here */
+a:active:focus {
+    color: $secondary;
+    background: $white;
+}
+
+/* Pinegrow generated Additional Rules Begin */
+h1 {
+    color: $secondary !important;
+}
+
+h2 {
+    color: $secondary !important;
+}
+
+h3 {
+    color: $secondary !important;
+}
+
+h4 {
+    color: $secondary !important;
+}
+
+body,
+html {
+    min-height: 100vh;
+}
+
+/* Pinegrow generated Additional Rules End */
