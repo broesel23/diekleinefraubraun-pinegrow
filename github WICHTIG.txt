@@ -1,0 +1,32 @@
+==
+git repository erstellen
+==
+zurerst in das Verzeichnis per Commandozeile wechseln, in dem das zukünftige Repository sich befindet/befinden wird.
+Dann folgende Kommandozeilen-Aufrufe (hier beispielhaft an Thordis' Website diekleinefraubraun) ausführen:
+echo "# diekleinefraubraun-pinegrow" >> README.md
+editieren/erzeugen der Datei .gitignore in diesem Verzeichnis
+dort steht vor allem der Ordner als Ausschluss drin, der die Backups enthält:
+_pgbackup/
+
+Erzeugen eines Repositories:
+git init
+
+Hinzufügen der ersten Datei, die soeben erzeugt wurde.
+git add README.md
+
+Das erste Einchecken mit Kommentar:
+git commit -m "first commit"
+
+Den ersten Branch erzeugen (den Master):
+git branch -M main
+
+Und nun wird erst Remote auf Github dieses Repository angelegt. Dazu auf dem Websfrontend anmelden und das Repository mit dem passenden Namen anlegen.
+
+Und lokal wird das Repository als Ursprung festgelegt:
+git remote add origin https://github.com/broesel23/diekleinefraubraun-pinegrow.git
+
+Nun alle Inhalte auf Github transferieren (auch alle Dateien außer README.md). Dazu wird erst jetzt nach Usernamen und dem Passwort gefragt. Hier aber statt Passwort das Online erzeugte Token anstelle des Passwortes für's "einloggen" verwenden) und dieses Kommando ausführen zum Übertragen der aktuell zum Repository per add hinzugefügten Inhalte: 
+git push -u origin main
+
+Danach kann man auch z.B. in VS Code das Commit machen. Hier werden neue Dateien auch hinzugefügt, sodass man kein push und add per Kommandozeile benötigt! VORSICHT - wenn man Ordner oder einzelne Dateien per Webinterface hochlädt, während das lokale Repository nicht neu heruntergeladen wurde (git pull), dann lassen sich lokale Änderungen (z.B.) neue Ordner nicht per git-Kommando hochladen. Dann wird empfohlen erst alle lokalen Änderungen  zu commiten und zu pushen (außer neue Dateien/Ordner) und danach ein pull zu machen. Es sollten dann aber zuvor per Webinterface die neuen Ordner hochgeladen werden. Dann ist nach dem pull ein konsistenter Zustand wieder hergestellt.
+
