@@ -1,0 +1,25 @@
+
+==
+Die Slideshows, deren Bilder in der Form einer Dateinamenliste (über Bildauswahl) erstellt wurden erzeugen Fehlermeldungen. Daher sollte man eine Slideshow mit einzelen Slides (über Slide-Module) definieren und jeden Slide einzeln anlegen (Slide mit Bild/Medium auswählen/Bild auswählen und übernehmen).
+
+reihenfolge slideshow wasdiewaendehoerten
+
+wasdiewaendehoerten02.jpg, wasdiewaendehoerten03.jpg, ..., 05, 06, 04, 07, 08, 09, 10, 11, 12, 13, 14, 15, 01
+
+reihenfolge slideshow die ordnung der dinge
+
+ordnung_raum.jpg, petersburger_haengung_1.jpg, petersburger_haengung_2.jpg, petersburger_haengung_3.jpg, machtverhaeltnisse_2.jpg, dieordnungderdinge09_.jpg, dieordnungderdinge07_.jpg, briefmarken_chemielehrer.jpg, briefmarken_geldhaie.jpg, briefmarken_freunde_der_atomkraft.jpg, krieg_frieden.jpg, briefmarken.jpg 
+
+Orakel (Serie)
+orakel_sammlung.jpg, orakel_der_geist_1.jpg, orakel_der_geist_2.jpg, orakel_der_geist_3.jpg,  
+orakel_sos.jpg, orakel_schlaflose_naechte.jpg, orakel_troja.jpg, orakel_tagtraeumer.jpg, 
+orakel_ohne_titel_2004.jpg, orakel_orientierungshilfe.jpg, orakel_psychoanalyse.jpg, 
+orakel_semiotik.jpg, orakel_rastlose_wanderer.jpg, orakel_buchstaben_kreise.jpg, orakel_kaefer.jpg, orakel_die_ordnung_der_dinge.jpg, orakel_die_liebe_hemmet_nichts.jpg
+
+Ambulanter Schutzraum
+ambulanter_schutzraum.jpg, ambulanter_schutzraum_01.jpg, ambulanter_schutzraum_einblick.jpg, ambulanter_schutzraum_innenraum.jpg, ambulanter_schutzraum_beschriftung.jpg, ambulanter_schutzraum_pforte.jpg, ambulanter_schutzraum_aussen.jpg, ambulanter_schutzraum_02.jpg
+
+
+
+
+
