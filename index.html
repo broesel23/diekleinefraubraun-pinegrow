@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
         <meta name="description" content=""> 
-        <meta name="author" content="Bernd Birkicht, Nils Koppelmann"> 
+        <meta name="author" content="Bernd Birkicht"> 
         <title>diekleinefraubraun</title>         
         <!-- Bootstrap core CSS -->         
         <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"> 
@@ -13,9 +13,8 @@
         <link href="carousel.css" rel="stylesheet"> 
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>     
-    <body style="margin: 10px;">
-        <a href="https://diekleinefraubraun.de" target="_self"></a> 
-        <nav class="bg-white fixed-top navbar navbar-expand-md"> 
+    <body style="display:grid;grid-template-columns:minmax(20px, 5%) 1fr 3fr minmax(20px,5%);grid-template-rows:[navbar-top-start] minmax(100px, 5%) [navbar-bottom-end] auto [footer-top-start] 100px [footer-bottom-end];grid-template-areas:'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';">
+        <nav class="bg-white fixed-top navbar navbar-expand-md" style="grid-area:navbar-top / 2 / navbar-bottom / 4;"> 
             <a href="https://diekleinefraubraun.de" target="_self"><span class="sr-only">(current)</span></a> 
             <a href="index.html"> <img src="assets/logo_diekleinefraubraun_rosa.svg" class="mh-100 mw-100" style="max-width: 150px; max-height: 100px;" width="150" height="50"> </a>
             <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -31,67 +30,22 @@
                     <a class="nav-link" href="impressum.html">Kontakt/Impressum</a> 
                 </ul>                 
             </div>
-        </nav>         
-        <div data-pgc-field="Content"> 
+        </nav>
+        <a href="https://diekleinefraubraun.de" target="_self"></a>
+        <div class="container" style="grid-area:2 / 2 / 3 / 3;">
+            <p>Paragraph</p>
+        </div>         
+        <div data-pgc-field="Content" style="grid-area:2 / 3 / 3 / 4;"> 
             <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-                <ol class="bg-white carousel-indicators"> 
-                    <li data-target="#myCarousel" data-slide-to="0" class="active bg-primary"></li>                     
-                    <li data-target="#myCarousel" data-slide-to="1" class="bg-primary"></li>                     
-                    <li data-target="#myCarousel" data-slide-to="2" class="bg-primary"></li>
-                    <li data-target="#myCarousel" data-slide-to="3" class="bg-primary"></li>
-                    <li data-target="#myCarousel" data-slide-to="4" class="bg-primary"></li>
-                </ol>                 
                 <div class="carousel-inner"> 
                     <div class="carousel-item active"> 
-                        <img class="first-slide" src="assets/white.jpg" alt="Moodle"> 
-                        <div class="container"> 
-                            <div class="bg-white carousel-caption d-block d-md-block text-center text-md-center"> 
-                                <h1>Moodle</h1> 
-                                <h1></h1> 
-                                <p>Zugriff auf unsere digitale Lernplattform Moodle.</p> 
-                                <p><a class="btn btn-lg btn-primary" href="https://moodle.thg.hn.bw.schule.de/moodle" role="button">Moodle</a></p> 
-                            </div>                             
-                        </div>                         
+                        <img class="first-slide" src="diekleinefraubraun_sieselbst.jpg" alt="Moodle"> 
                     </div>                     
                     <div class="carousel-item"> 
-                        <img class="second-slide" src="assets/white.jpg" alt="Webmail"> 
-                        <div class="container"> 
-                            <div class="carousel-caption d-block d-md-block"> 
-                                <h1>Webmail / Dateien</h1> 
-                                <p>Zugriff auf Webmail und die Dateien auf dem Netzlaufwerk.</p> 
-                                <p><a class="btn btn-lg btn-primary" href="https://server.thg.hn.bw.schule.de/horde3" role="button">Webmail</a></p> 
-                            </div>                             
-                        </div>                         
+                        <img class="second-slide" src="werkschau/ledesir/le_desir_eternel.jpg" alt="Webmail">                          
                     </div>                     
                     <div class="carousel-item"> 
-                        <img class="third-slide" src="assets/white.jpg" alt="Schulkonsole"> 
-                        <div class="container"> 
-                            <div class="carousel-caption d-block d-md-block text-center text-md-center"> 
-                                <h1>Schulkonsole</h1> 
-                                <p>Zugriff auf die Accountdaten Deines Profils.</p> 
-                                <p><a class="btn btn-lg btn-primary" href="https://server.thg.hn.bw.schule.de:242" role="button">Schulkonsole</a></p> 
-                            </div>                             
-                        </div>                         
-                    </div>
-                    <div class="carousel-item"> 
-                        <img class="fourth-slide" src="assets/white.jpg" alt="Schulhomepage"> 
-                        <div class="container"> 
-                            <div class="carousel-caption d-block d-md-block text-center text-md-center"> 
-                                <h1>Schulhomepage</h1> 
-                                <p>Zugriff auf die Homepage des THG-Heilbronn.</p> 
-                                <p><a class="btn btn-lg btn-primary" href="https://www.thg.hn.bw.schule.de" role="button">Schulhomepage</a></p> 
-                            </div>                             
-                        </div>                         
-                    </div>
-                    <div class="carousel-item"> 
-                        <img class="fifth-slide" src="assets/white.jpg" alt="Schulcloud"> 
-                        <div class="container"> 
-                            <div class="carousel-caption d-block d-md-block text-center text-md-center"> 
-                                <h1>Schulcloud (Teams)</h1> 
-                                <p>Zugriff auf unsere Schulcloud (Teams).</p> 
-                                <p><a class="btn btn-lg btn-primary" href="https://teams.microsoft.com" role="button">Schulcloud</a></p> 
-                            </div>                             
-                        </div>                         
+                        <img class="third-slide" src="assets/white.jpg" alt="Schulkonsole">                          
                     </div>
                 </div>                 
                 <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="bg-secondary carousel-control-prev-icon text-secondary" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
@@ -99,10 +53,10 @@
             </div>
         </div>         
         <!-- FOOTER -->         
-        <div>
+        <div style="grid-area:footer-top / 2 / footer-bottom / 4;">
             <footer> 
                 <p class="float-right"><a href="#" style="margin-right: 20px;" class="text-secondary">Nach oben</a></p> 
-                <p style="margin-left: 20px; margin-right: 20px;">&copy; 2021 Thordis K&ouml;nig &middot; <a href="datenschutz.html" target="_self" class="text-secondary">Datenschutz</a></p> 
+                <p style="margin-left: 20px; margin-right: 20px;">&copy; 2021 Thordis König&middot; <a href="datenschutz.html" target="_self" class="text-secondary">Datenschutz</a></p> 
             </footer>             
         </div>         
         <!-- /.container -->         
