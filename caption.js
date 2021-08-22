@@ -9,5 +9,6 @@ $(function() {
        var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .carousel-caption');
        $('#slide-caption h4').html(caption.html());
        caption.css('display','none');
+    
     });
 });
