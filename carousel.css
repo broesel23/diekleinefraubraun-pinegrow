@@ -26,9 +26,10 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
-    height: 32rem;
-    background-color: #777;
+/* .carousel-item {
+    min-height: 40rem;
+    min-width: 40rem; 
+    background-color: #ffffff;
 }
 
 .carousel-item > img {
@@ -36,9 +37,8 @@ body {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
-}
-
+    min-height: 100%;
+} */
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
