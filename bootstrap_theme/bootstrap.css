@@ -2,6 +2,14 @@
 html {
   font-size: 100% !important; }
 
+.navbar .nav-item:hover .dropdown-menu {
+  display: block; }
+
+.navbar-nav active,
+.navbar-nav .dropdown-menu > a:hover {
+  background-color: #f3b3ce;
+  /*  background-color: #f098bc; */ }
+
 h1 {
   color: #f098bc !important; }
 
