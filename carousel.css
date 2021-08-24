@@ -109,6 +109,10 @@ body {
 .tk-logo {
     max-width: 150px;
     max-height: 100px;
+    background: white;
+    margin-left: 20px;
+    margin-top: 12px;
+    position: fixed;
     grid-area: 1 / 3 / 2 / 4;
 }
 
