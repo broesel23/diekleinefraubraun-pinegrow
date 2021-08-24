@@ -1,5 +1,5 @@
 /* this script is not working !
-   use "pause on hover for the slider-element instead.
+   remove "data-ride carousel" for the topmost slider-element instead.
  */
 /*
 player.on('mouseout', function() {
