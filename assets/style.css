@@ -7,7 +7,7 @@ body {
     grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
     grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
     grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
