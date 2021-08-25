@@ -4,9 +4,9 @@
 body {
     /* color: #5a5a5a; */
     display: grid;
-    grid-template-columns: 20px 20px [navbar-left-start footer-left-start sidebar-left-start] 1fr [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
+    grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
     grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
-    grid-template-areas: 'border-lt gap navbar navbar border-rt' 'border-lt gap sidebar-left slides-caption border-rt' 'border-lt gap sidebar-left slides border-rt' 'border-lt gap footer footer border-rt';
+    grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
     grid-gap: 10px;
 }
 
@@ -95,25 +95,18 @@ body {
     }
 } */
 .tk-logo {
-    grid-area: navbar-top / navbar-left / navbar-bottom / sidebar-right;
     align-self: center;
+    width: 150px;
+    height: 12px;
+    background: white;
 }
 
 .navbar {
-    grid-area: navbar-top / slides-left / navbar-bottom / slides-right;
+    grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
     position: fixed;
-    margin-left: 210px;
-    margin-top: 15px;
-}
 
-.tk-logo {
-    max-width: 150px;
-    max-height: 100px;
-    background: white;
-    margin-left: 20px;
-    margin-top: 12px;
-    position: fixed;
-    grid-area: 1 / 3 / 2 / 4;
+    /* margin-left: 210px;
+    margin-top: 15px; */
 }
 
 .sidebar {
@@ -131,3 +124,21 @@ body {
 .float-right {
     margin-right: 20px;
 }
+
+/* * Solving carousel-controls not displayed on top of video/auto and their controls.
+ * Causes Footer not displayed seperated anymore. */
+.carousel-inner {
+    top: 8%;
+}
+
+.carousel-control-next {
+    /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+    left: 10%;
+    bottom: 90%;
+}
+
+.carousel-control-prev {
+    /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+    bottom: 90%;
+}
+

@@ -8,7 +8,7 @@ html {
 .navbar-nav active,
 .navbar-nav .dropdown-menu > a:hover {
   background-color: #f3b3ce;
-  /*  background-color: #f098bc; */ }
+  /* background-color: #f098bc; */ }
 
 h1 {
   color: #f098bc !important; }
