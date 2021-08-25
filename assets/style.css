@@ -118,6 +118,7 @@ body {
 }
 
 .footer {
+    margin-top: 30%;
     grid-area: footer-top / navbar-left / footer-bottom / slides-right;
 }
 
@@ -147,12 +148,12 @@ body {
 }
 
 button.btn-customized:hover,
-button.btn-customized:active,
-button.btn-customized:focus,
-button.btn-customized:active:focus,
-button.btn-customized.active:focus,
-button.btn.btn-primary:not(:disabled):not(.disabled):active,
-button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+button.btn-customized:active,
+button.btn-customized:focus,
+button.btn-customized:active:focus,
+button.btn-customized.active:focus,
+button.btn.btn-primary:not(:disabled):not(.disabled):active,
+button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
     outline: 0;
     background: #f098bc ;
     background: rgba(240, 152, 188, 0.827);
@@ -182,6 +183,10 @@ button.btn-customized {
     color: #555;
     line-height: 46px;
     box-shadow: none;
+}
+
+.active {
+    color: #f098bc;
 }
 
 /* .pause-cycle-buttons {

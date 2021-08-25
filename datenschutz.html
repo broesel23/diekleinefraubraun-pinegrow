@@ -1,52 +1,69 @@
 <!DOCTYPE html> 
-<html lang="de"> 
+<html lang="de" data-pgc-master="master.html"> 
     <head> 
         <meta charset="utf-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
         <meta name="description" content=""> 
-        <meta name="author" content="Broeselchen"> 
+        <meta name="author" content="broesel23"> 
         <title>diekleinefraubraun</title>         
         <!-- Bootstrap core CSS -->         
         <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"> 
         <!-- Custom styles for this template -->         
-        <link href="carousel.css" rel="stylesheet"> 
+        <link href="assets/style.css" rel="stylesheet"> 
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+        <link rel="stylesheet" href="pgia/components/controls.css">
+        <link rel="stylesheet" href="pgia/components/slider.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     </head>     
-    <body style="margin: 10px;">
-        <a href="https://diekleinefraubraun.de" target="_self"></a> 
+    <body>
         <nav class="bg-white fixed-top navbar navbar-expand-md"> 
-            <a href="https://diekleinefraubraun.de" target="_self"><span class="sr-only">(current)</span></a> 
-            <a href="index.html"> <img src="assets/logo_diekleinefraubraun_rosa.svg" class="mh-100 mw-100" style="max-width: 150px; max-height: 100px;" width="150" height="50"> </a>
             <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-light navbar-toggler-icon"></span> 
             </button>             
-            <div class="collapse navbar-collapse" id="navbarCollapse"> 
-                <ul class="navbar-nav mr-auto"> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./werkschau.html" data-pg-ia='{"l":[{"trg":"click","name":"nav-element-klick","a":{"l":[{"t":"$.navbar-nav #gt# a:nth-of-type(3)","l":[{"t":"set","p":0,"d":0,"l":{"color":"#f098bc"}}]}]}}]}'>Werkschau</a>
+            <div class="bg-white collapse navbar-collapse" id="navbarCollapse"> 
+                <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="index.html" title="Home" data-pgc-field="menu-main-item0"><img src="assets/logo_diekleinefraubraun_rosa.svg" class="tk-logo" alt="Home"></a>
+                    <li class="active dropdown nav-item" data-pgc-field="menu-main-item1">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Klick => Feststellen" data-pgc-field="menu-item1">&nbsp;&nbsp;Werkschau</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Der Geist erhebt sich über die Materie (Installation)</a>
+                            <a class="dropdown-item" href="#">Was die Wände hörten (Installation)</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">Ausgegraben (Installation)</a>
+                            <a class="dropdown-item" href="#">Die Ordnung der Dinge (Serie)</a>
+                            <a class="dropdown-item" href="#">Nutze den Tag (Installation)</a>
+                            <a class="dropdown-item" href="#">UNVERGESSEN (Installation)</a>
+                            <a class="dropdown-item" href="#">Orakel (Serie)</a>
+                            <a class="dropdown-item" href="#">Ambulanter Schutzraum</a>
+                            <a class="dropdown-item" href="#">Monument für eine untergehende Klasse</a>
+                            <a class="dropdown-item" href="#">Le Voyage</a>
+                            <a class="dropdown-item" href="#">Le desir eternel</a>
+                        </div>
                     </li>                     
-                    <a class="nav-link" href="sieselbst.html">Sie selbst</a>
-                    <a class="nav-link" href="links.html">Links</a>
-                    <a class="nav-link" href="impressum.html">Kontakt/Impressum</a> 
+                    <a class="nav-link" href="sieselbst.html" data-pgc-field="menu-main-item2">Sie selbst</a>
+                    <a class="nav-link" href="links.html" data-pgc-field="menu-main-item3">Links</a>
+                    <a class="nav-link" href="impressum.html" data-pgc-field="menu-main-item4">Kontakt/Impressum</a> 
                 </ul>                 
             </div>
-        </nav>         
-        <div data-pgc-field="Content">
-            <br> 
-            <br> 
-            <h3>Allgemeine Hinweise</h3> 
-            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn
-    Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden
-    können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie der unter diesem Text aufgeführten
+        </nav>
+        <div class="container sidebar" data-pgc-field="sidebar">
+</div>         
+        <div id="slider_captions" data-pgc-field="slider_captions">
+            <h2>Datenschutz</h2>
+        </div>
+        <div id="slider" class="carousel slide" data-ride="carousel" data-interval="6000"> 
+            <div class="carousel-inner" data-pgc-field="slides">
+                <div data-pgc-field="Content"> 
+                    <h3>Allgemeine Hinweise</h3> 
+                    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie der unter diesem Text aufgeführten
     Datenschutzerklärung.</p> 
-            <br>
-            <br> 
-            <h3>Datenschutzerklärung</h3> 
-            <p>&nbsp;</p> 
-            <h4>1. Verantwortliche und Datenschutzbeauftragte</h4> 
-            <p>1.1 Verantwortliche gem. Art. 4 Abs. 7 EU-Datenschutz-Grundverordnung (EU-DSGVO) ist</p> 
-            <p>Frau Thordis K&ouml;nig<br>
+                    <br>
+                    <h3>Datenschutzerklärung</h3> 
+                    <p>&nbsp;</p> 
+                    <h4>1. Verantwortliche und Datenschutzbeauftragte</h4> 
+                    <p>1.1 Verantwortliche gem. Art. 4 Abs. 7 EU-Datenschutz-Grundverordnung (EU-DSGVO) ist</p> 
+                    <p>Frau Thordis K&ouml;nig<br>
     Max-Koska-Straße 5<br>
     D 13189 Berlin<br>
     E-Mail:&nbsp;<span id="cloak214dd7a7819b6aedf10cdffab1e924b2">Diese E-Mail-Adresse ist vor Spambots
@@ -59,97 +76,94 @@
             var addy_text214dd7a7819b6aedf10cdffab1e924b2 = '&#x0064;'+ 'iek&#108;' + 'einefraubrau'+'&#x006e;' + '&#64;' + 'gmx' + '&#46;' + 'd&#101;'; document.getElementById('cloak214dd7a7819b6aedf10cdffab1e924b2').innerHTML += '<a class="text-secondary"' + path + '\'' + prefix + ':' + addy214dd7a7819b6aedf10cdffab1e924b2 + '\'>' + addy_text214dd7a7819b6aedf10cdffab1e924b2 + '<\/a>';
         </script> <br>Internet:&nbsp;<a href="https://www.diekleinefraubraun.de" class="text-secondary">https://www.diekleinefraubraun.de</a><br>(siehe
     mein <a href="impressum.html" class="text-secondary">Impressum</a>).</p> 
-            <p>&nbsp;</p> 
-            <p>1.2 Die Datenschutzbeauftragte ist Frau K&ouml;nig selbst. Sie ist zu erreichen per Briefpost, Mail, Telefon (s.o.).</p> 
-            <p>&nbsp;</p> 
-            <h4>2. Information über die Erhebung personenbezogener Daten, Speicherdauer</h4> 
-            <p>2.1 Im Folgenden werden Sie informiert über die Erhebung personenbezogener Daten bei Nutzung dieser Website. Personenbezogene Daten sind alle Daten, die auf Sie persönlich beziehbar sind, z. B. Name, Adresse, E-Mail-Adressen, Nutzerverhalten, IP-Adresse, etc..</p> 
-            <p style="text-align: justify;">2.2 Bei Ihrer Kontaktaufnahme mit mir per E-Mail oder über ein
+                    <br>1.2 Die Datenschutzbeauftragte ist Frau K&ouml;nig selbst. Sie ist zu erreichen per Briefpost, Mail, Telefon (s.o.). 
+                    <br>
+                    <br>
+                    <h4>2. Information über die Erhebung personenbezogener Daten, Speicherdauer</h4> 
+                    <p>2.1 Im Folgenden werden Sie informiert über die Erhebung personenbezogener Daten bei Nutzung dieser Website. Personenbezogene Daten sind alle Daten, die auf Sie persönlich beziehbar sind, z. B. Name, Adresse, E-Mail-Adressen, Nutzerverhalten, IP-Adresse, etc..</p> 
+                    <p style="text-align: justify;">2.2 Bei Ihrer Kontaktaufnahme mit mir per E-Mail oder über ein
     Kontaktformular werden die von Ihnen mitgeteilten Daten (Ihre E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer)
     von mir gespeichert, um mit Ihnen zu kommunizieren. Die in diesem Zusammenhang anfallenden Daten werden gelöscht,
     nachdem die Speicherung nicht mehr erforderlich ist. Oder die Verarbeitung wird eingeschränkt, falls gesetzliche
     Aufbewahrungspflichten bestehen.</p> 
-            <p style="text-align: justify;">2.3 Falls für einzelne Funktionen dieses Angebots auf beauftragte
+                    <p style="text-align: justify;">2.3 Falls für einzelne Funktionen dieses Angebots auf beauftragte
     Dienstleister zurückgegriffen werden muss oder Ihre Daten für werbliche Zwecke genutzt werden könnten, so werden Sie  untenstehend im Detail über die jeweiligen Vorgänge informiert. Dabei werden auch die festgelegten Kriterien der Speicherdauer genannt.</p> 
-            <p>&nbsp;</p> 
-            <h4>3. Ihre Rechte</h4> 
-            <p>3.1 Sie haben gegenüber dem Anbieter folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen
+                    <h4>3. Ihre Rechte</h4> 
+                    <p>3.1 Sie haben gegenüber dem Anbieter folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen
     Daten:</p> 
-            <ul style="list-style-type: disc;"> 
-                <li>Recht auf Auskunft (z.B. welche Daten werden von der speichernden Stelle erhoben),</li>                 
-                <li>Recht auf Berichtigung oder Löschung,             
-                    <li>Recht auf Einschränkung der Verarbeitung,</li>                     
-                    <li> 
-                        <strong>Recht auf Widerspruch gegen die Verarbeitung,</strong> 
-                    </li>                     
-                    <li>Recht auf Datenübertragbarkeit.
-                        <br> 
-                        <br> 
-                    </li>                     
-            </ul>             
-            <p style="text-align: justify;">3.2 Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch den Anbieter zu <strong>beschweren</strong>. Die zuständige  Datenschutzaufsichtsbehörde ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit<br>
+                    <ul style="list-style-type: disc;"> 
+                        <li>Recht auf Auskunft (z.B. welche Daten werden von der speichernden Stelle erhoben),</li>                         
+                        <li>Recht auf Berichtigung oder Löschung,             
+                            <li>Recht auf Einschränkung der Verarbeitung,</li>                             
+                            <li> 
+                                <strong>Recht auf Widerspruch gegen die Verarbeitung,</strong> 
+                            </li>                             
+                            <li>Recht auf Datenübertragbarkeit.  
+</li>                             
+                    </ul>                     
+                    <p style="text-align: justify;">3.2 Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch den Anbieter zu <strong>beschweren</strong>. Die zuständige  Datenschutzaufsichtsbehörde ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit<br>
     Friedrichstr. 219<br>
     Besuchereingang: Puttkamerstr. 16 – 18 (5. Etage)<br>
     10969 Berlin<br>
     Telefon: 030 13889-0<br>
     Telefax: 030 2155050<br>
     Internet: <a href="https://www.datenschutz-berlin.de/ueber-uns/kontakt" class="text-secondary">https://www.datenschutz-berlin.de/ueber-uns/kontakt</a> </p> 
-            <p style="text-align: justify;">3.3 Werden personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt, so haben Sie das Recht, über die geeigneten Garantien gemäß Art. 46 EU-DSGVO im Zusammenhang mit der Übermittlung unterrichtet zu werden.</p> 
-            <p>&nbsp;</p> 
-            <h4>4. Erhebung und Zweck personenbezogener Daten bei Besuch dieser Website</h4> 
-            <p style="text-align: justify;">4.1 Bei der lediglich informatorischen Nutzung der Website, also wenn
-    Sie sich nicht registrieren oder mir anderweitig Informationen übermitteln, werden nur die personenbezogenen
-    Daten, die Ihr Browser an den zum Betrieb der Website genutzten Server übermittelt, erhoben.<br>
-    Wenn Sie diese Website betrachten, werden die
-    folgenden Daten erhoben, die für mich als Betreiberin des Webservers technisch erforderlich sind, um
-    Ihnen meine Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten (Rechtsgrundlage ist Art. 6 Abs.
-    1 S. 1 lit. f EU-DSGVO):</p> 
-            <p style="text-align: justify;">Dabei werden folgende Daten erfasst:</p> 
-            <ul> 
-                <li style="text-align: justify;">Datum und Uhrzeit des Zugriffs</li>                 
-                <li style="text-align: justify;">Vollständige IP-Adresse des zugreifenden Geräts</li>                 
-                <li style="text-align: justify;">abgerufene Datei oder Funktion mit Abrufmethode (GET oder POST)</li>                 
-                <li style="text-align: justify;">verwendetes Protokoll</li>                 
-                <li style="text-align: justify;">Ergebnis des Abrufs (HTTP Status)</li>                 
-                <li style="text-align: justify;">Zahl der übertragenen Bytes</li>                 
-                <li style="text-align: justify;">Im Error-Logfile noch zusätzlich den aufgetretenen Fehler</li>                 
-            </ul>             
-            <p style="text-align: justify;">Diese Daten werden üblicherweise 14 Tage lang aufgehoben.</p>
-            <br>
-            <p style="text-align: justify;">4.2 Zusätzlich zu den zuvor genannten Daten können bei Ihrer Nutzung
-    meiner Website Cookies auf Ihrem Rechner gespeichert werden. Bei Cookies handelt es sich um kleine Textdateien, die auf
-    Ihrer Festplatte dem von Ihnen verwendeten Browser zugeordnet gespeichert werden und durch welche der Stelle, die
-    den Cookie setzt (hier durch mich), bestimmte Informationen zufließen. Cookies können keine Programme ausführen oder
-    Viren auf Ihren Computer übertragen. Sie dienen dazu, das Internetangebot insgesamt nutzerfreundlicher und
-    effektiver zu machen.</p> 
-            <p>&nbsp;</p>
-            <h4>4.3 Einsatz von Cookies</h4> 
-            <p>Diese Website nutzt zur Verbesserung der Nutzererfahrung Cookies.</p> 
-            <p style="text-align: justify;"></p> 
-            <p style="text-align: justify;">Bitte beachten Sie, dass Sie grundsätzlich Browser so konfigurieren können, dass Sie
-    über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von
-    Cookies für bestimmte Fälle oder generell ausschließen können. Jeder Browser unterscheidet sich allerdings in der
-    Art, wie die Cookie-Einstellungen verwaltet werden. Im Hilfemenü jedes Browsers finden Sie, wie Sie diese
-    Cookie-Einstellungen ändern können. Für die jeweiligen am weitesten verbreiteten Browser können Sie dazu auch unter
-    den folgenden Links Hilfe erhalten:</p> 
-            <p>Internet Explorer: <a href="http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies" class="text-secondary">http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies</a><br>Firefox: <a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" class="text-secondary">https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen</a><br>Chrome: <a href="http://support.google.com/chrome/bin/answer.py?hl=de&amp;hlrm=en&amp;answer=95647" class="text-secondary">http://support.google.com/chrome/bin/answer.py?hl=de&amp;hlrm=en&amp;answer=95647</a><br>Safari: <a href="https://support.apple.com/kb/ph21411?locale=de_DE" class="text-secondary">https://support.apple.com/kb/ph21411?locale=de_DE</a><br>Opera: <a href="http://help.opera.com/Windows/10.20/de/cookies.html" class="text-secondary">http://help.opera.com/Windows/10.20/de/cookies.html</a></p> 
-            <p>Konkrete Beispiele, wie Sie Ihre Browser-Einstellungen entsprechend Ihren Wünschen konfigurieren und z. B. die
-    Annahme von Third-Party-Cookies oder allen Cookies ablehnen, Cookies löschen etc. können finden Sie im Folgenden.</p> 
-            <p>Für Chrome-Browser ab Version 66.0 beispielsweise gehen Sie dazu unter&nbsp;<a href="chrome://settings/siteData">Cookies anzeigen</a>&nbsp;bzw.&nbsp;<a href="chrome://settings/content/cookies?search=cookies">Cookie-Einstellungen</a>.</p> 
-            <p>Für den Firefox-Browser ab Version 60.0.1. beispielsweise können Sie die Einstellungen für Cookies in den&nbsp;<a href="about:preferences#privacy">Sicherheits-Einstellungen </a>&nbsp;ändern.</p> 
-            <p>&nbsp;</p> 
-            <h4>4.4 Cookies, die aktuell gespeichert werden</h4> 
-            <p style="text-align: justify;"></p>
-            <p style="text-align: justify;">Für die Nutzung dieser  Website werden aktuell keine Cookies gespeichert.</p> 
-            <p style="text-align: justify;">&nbsp;</p> 
-            <p>&nbsp;</p> 
-            <p>&nbsp;</p>
-        </div>         
-        <!-- FOOTER -->         
-        <div>
+                    <p style="text-align: justify;">3.3 Werden personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt, so haben Sie das Recht, über die geeigneten Garantien gemäß Art. 46 EU-DSGVO im Zusammenhang mit der Übermittlung unterrichtet zu werden.</p> 
+                    <h4>4. Erhebung und Zweck personenbezogener Daten bei Besuch dieser Website</h4> 
+                    <p style="text-align: justify;">4.1 Bei der lediglich informatorischen Nutzung der Website, also wenn
+                    Sie sich nicht registrieren oder mir anderweitig Informationen übermitteln, werden nur die personenbezogenen
+                    Daten, die Ihr Browser an den zum Betrieb der Website genutzten Server übermittelt, erhoben. <br>
+                    Wenn Sie diese Website betrachten, werden die folgenden Daten erhoben, die für mich als Betreiberin des Webservers technisch erforderlich sind, um Ihnen meine Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten (Rechtsgrundlage ist Art. 6 Abs. 1 S. 1 lit. f EU-DSGVO): <br>Dabei werden folgende Daten erfasst werden üblicherweise 14 Tage lang aufgehoben: <br> <ul> 
+                            <li style="text-align: justify;">Datum und Uhrzeit des Zugriffs</li>                             
+                            <li style="text-align: justify;">Vollständige IP-Adresse des zugreifenden Geräts</li>                             
+                            <li style="text-align: justify;">abgerufene Datei oder Funktion mit Abrufmethode (GET oder POST)</li>                             
+                            <li style="text-align: justify;">verwendetes Protokoll</li>                             
+                            <li style="text-align: justify;">Ergebnis des Abrufs (HTTP Status)</li>                             
+                            <li style="text-align: justify;">Zahl der übertragenen Bytes</li>                             
+                            <li style="text-align: justify;">Im Error-Logfile noch zusätzlich den aufgetretenen Fehler</li>                             
+                        </ul> </p>
+                    <p style="text-align: justify;">4.2 Zusätzlich zu den zuvor genannten Daten können bei der Nutzung dieser Website Cookies auf Ihrem Rechner gespeichert werden. Bei Cookies handelt es sich um kleine Textdateien, die auf
+                    Ihrer Festplatte dem von Ihnen verwendeten Browser zugeordnet gespeichert werden und durch welche der Stelle, die
+                    den Cookie setzt (hier durch mich), bestimmte Informationen zufließen. Cookies können keine Programme ausführen oder
+                    Viren auf Ihren Computer übertragen. Sie dienen dazu, das Internetangebot insgesamt nutzerfreundlicher und
+                    effektiver zu machen. <br> <br>
+                    4.3 Einsatz von Cookies <br>
+                    Bitte beachten Sie, dass Sie grundsätzlich Browser so konfigurieren können, dass Sie
+                    über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von
+                    Cookies für bestimmte Fälle oder generell ausschließen können. Jeder Browser unterscheidet sich allerdings in der
+                    Art, wie die Cookie-Einstellungen verwaltet werden. Im Hilfemenü jedes Browsers finden Sie, wie Sie diese
+                    Cookie-Einstellungen ändern können. Für die jeweiligen am weitesten verbreiteten Browser können Sie dazu auch unter
+                    den folgenden Links Hilfe erhalten:</p>
+                    <p></p>
+                    <br>Internet Explorer: 
+                    <a href="http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies" class="text-secondary">http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies</a>
+                    <br>Firefox: 
+                    <a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" class="text-secondary">https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen</a>
+                    <br>Chrome: 
+                    <a href="http://support.google.com/chrome/bin/answer.py?hl=de&amp;hlrm=en&amp;answer=95647" class="text-secondary">http://support.google.com/chrome/bin/answer.py?hl=de&amp;hlrm=en&amp;answer=95647</a>
+                    <br>Safari: 
+                    <a href="https://support.apple.com/kb/ph21411?locale=de_DE" class="text-secondary">https://support.apple.com/kb/ph21411?locale=de_DE</a>
+                    <br>Opera: 
+                    <a href="http://help.opera.com/Windows/10.20/de/cookies.html" class="text-secondary">http://help.opera.com/Windows/10.20/de/cookies.html</a>
+                    <br>
+                    <br>
+                    <p style="text-align: justify;">Die Annahme von Third-Party-Cookies oder alle Cookies ablehnen, Cookies löschen etc. können Sie 
+                    für Chrome-Browser ab Version 66.0m indem Sie dazu unter&nbsp; <a href="chrome://settings/siteData">Cookies anzeigen</a>&nbsp;bzw.&nbsp; <a href="chrome://settings/content/cookies?search=cookies">Cookie-Einstellungen</a> gehen. Für den Firefox-Browser ab Version 60.0.1. beispielsweise können Sie die Einstellungen für Cookies in den&nbsp; <a href="about:preferences#privacy">Sicherheits-Einstellungen </a>&nbsp;ändern.</p>
+                    <br>
+                    <br> 
+                    4.4 Die Cookies, die aktuell von dieser Website in Ihrem Browser gespeichert werden sind folgende:
+
+                    <br>
+                    <br>Für die Nutzung dieser  Website werden aktuell keine Cookies gespeichert. 
+                </div>
+            </div>
+            <div data-pgc-field="slider-controls"> 
+</div>
+        </div>
+        <div class="footer">
             <footer> 
-                <p class="float-right"><a href="#" style="margin-right: 20px;" class="text-secondary">Nach oben</a></p> 
-                <p style="margin-left: 20px; margin-right: 20px;">&copy; 2021 Thordis K&ouml;nig &middot; <a href="datenschutz.html" class="text-secondary" target="_self">Datenschutz</a></p> 
+                <p class="float-right"><a href="#" class="float-right text-secondary">Nach oben</a></p> 
+                <p class="copyright">&copy; 2021 Thordis König&middot; <a href="datenschutz.html" target="_self" class="text-secondary">Datenschutz</a></p> 
             </footer>             
         </div>         
         <!-- /.container -->         
@@ -162,5 +176,6 @@
         <!-- Just to make our placeholder images work. Don't actually copy the next line! -->         
         <script src="assets/js/holder.min.js"></script>         
         <script src="pgia/lib/pgia.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>     
 </html>
