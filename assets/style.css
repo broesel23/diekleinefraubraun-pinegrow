@@ -150,15 +150,16 @@ button.btn-customized:hover,
 button.btn.btn-primary:not(:disabled):not(.disabled):active,
 button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
     outline: 0;
-    background: rgb(241, 210, 210);
-    background: rgba(255, 191, 191, 0.889);
+    background: #f098bc ;
+    background: rgba(240, 152, 188, 0.827);
     border: 0;
     color: rgb(32, 31, 31);
     box-shadow: none;
 }
 
+/* rgb(241, 210, 210) */
 button.btn-customized.disabled {
-    background: rgb(19, 18, 18);
+    background: rgb(240, 152, 188);
     background: rgba(255, 255, 255, 0.5);
 }
 
@@ -169,7 +170,7 @@ button.btn-customized {
     margin-left: 5px;
     margin-right: 5px;
     padding: 0;
-    background: rgba(247, 193, 193, 0.827);
+    background: rgba(240, 152, 188, 0.589);
     border: 0;
     border-radius: 50%;
     font-size: 15px;
