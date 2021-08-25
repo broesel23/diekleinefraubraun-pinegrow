@@ -134,12 +134,12 @@ body {
 .carousel-control-next {
     /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
     left: 10%;
-    bottom: 90%;
+    bottom: 93%;
 }
 
 .carousel-control-prev {
     /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
-    bottom: 90%;
+    bottom: 93%;
 }
 
 button.btn-customized:hover,
@@ -151,9 +151,9 @@ button.btn-customized:hover,
 button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
     outline: 0;
     background: rgb(241, 210, 210);
-    background: rgba(255, 191, 191, 0.725);
+    background: rgba(255, 191, 191, 0.889);
     border: 0;
-    color: rgb(241, 180, 180);
+    color: rgb(32, 31, 31);
     box-shadow: none;
 }
 
@@ -169,10 +169,9 @@ button.btn-customized {
     margin-left: 5px;
     margin-right: 5px;
     padding: 0;
-    background: rgb(247, 193, 193);
+    background: rgba(247, 193, 193, 0.827);
     border: 0;
     border-radius: 50%;
-    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #555;
