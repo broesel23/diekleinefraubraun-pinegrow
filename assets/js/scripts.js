@@ -11,3 +11,24 @@ $("#slider").on('slide.bs.carousel', function(evt) {
         } /* else {
         $("#slider").carousel.slide.data-ride('carousel'); */        
 });
+
+/*
+    Stop / Start carousel autoplay
+*/
+$('.btn-customized').on('click', function(){
+ 
+    if( ! $(this).hasClass('disabled') ) {
+ 
+        if( $(this).hasClass('btn-pause') ) {
+            $('.carousel').carousel('pause');
+        }
+        else {
+            $('.carousel').carousel('cycle');
+        }
+ 
+        $('.btn-pause, .btn-cycle').toggleClass('disabled');
+        $(this).blur();
+ 
+    }
+ 
+});
