@@ -133,12 +133,16 @@ body {
 
 .carousel-control-next {
     /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
-    left: 10%;
+    /* left: -20%;
+    bottom: 70%; */
+    left: 20%;
     bottom: 93%;
 }
 
 .carousel-control-prev {
-    /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+    /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+    /* left:-30%;
+	bottom: 70%; */
     bottom: 93%;
 }
 
@@ -173,7 +177,7 @@ button.btn-customized {
     background: rgba(240, 152, 188, 0.589);
     border: 0;
     border-radius: 50%;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 400;
     color: #555;
     line-height: 46px;
