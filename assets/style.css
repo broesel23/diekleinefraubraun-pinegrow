@@ -118,7 +118,6 @@ body {
 }
 
 .footer {
-    margin-top: 30%;
     grid-area: footer-top / navbar-left / footer-bottom / slides-right;
 }
 
@@ -193,4 +192,7 @@ button.btn-customized {
 	margin-bottom: 5%;
 	margin-left: 40%;
 } */
+.tk-slide-and-caption-area-container {
+    grid-area: slides-caption-top / slides-left / slides-bottom / slides-right;
+}
 
