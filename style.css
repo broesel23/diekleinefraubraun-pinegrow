@@ -147,12 +147,12 @@ body {
 }
 
 button.btn-customized:hover,
-button.btn-customized:active,
-button.btn-customized:focus,
-button.btn-customized:active:focus,
-button.btn-customized.active:focus,
-button.btn.btn-primary:not(:disabled):not(.disabled):active,
-button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+button.btn-customized:active,
+button.btn-customized:focus,
+button.btn-customized:active:focus,
+button.btn-customized.active:focus,
+button.btn.btn-primary:not(:disabled):not(.disabled):active,
+button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
     outline: 0;
     background: #f098bc ;
     background: rgba(240, 152, 188, 0.827);
