@@ -1,0 +1,4 @@
+# robots.txt zu https://www.diekleinefraubraun.de/
+
+User-agent: *
+Disallow: /01backups/
