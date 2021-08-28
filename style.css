@@ -106,6 +106,13 @@ body {
     background: white;
 }
 
+@media only screen and (min-width: 960px) {
+    .dropdown-hover:hover .dropdown-hover-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
 .navbar {
     grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
     z-index: 9999;
@@ -120,7 +127,7 @@ body {
 }
 
 #slider_captions {
-    grid-area: slides-caption-top / slides-left / slides-caption-bottom / slides-right;
+    grid-area: slides-caption-top / navbar-left / slides-caption-bottom / slides-right;
 }
 
 .footer {
