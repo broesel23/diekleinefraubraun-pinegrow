@@ -2,30 +2,6 @@
 html {
   font-size: 100% !important; }
 
-.navbar .nav-item:hover .dropdown-menu {
-  display: block; }
-
-.navbar-nav active,
-.navbar-nav .dropdown-menu > a:hover {
-  background-color: #f3b3ce;
-  /* background-color: #f098bc; */ }
-
-h1 {
-  color: #f098bc !important; }
-
-h2 {
-  color: #f098bc !important; }
-
-h3 {
-  color: #f098bc !important; }
-
-h4 {
-  color: #f098bc !important; }
-
-body,
-html {
-  min-height: 100vh; }
-
 /* Pinegrow generated Theme Init End */
 /* Bootstrap theme customized with Pinegrow Web Editor */
 /* Vars go before the @import */
@@ -170,7 +146,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #f098bc;
+    color: black;
     text-decoration: underline; }
 
 a:not([href]):not([class]) {
@@ -2654,7 +2630,7 @@ fieldset:disabled a.btn {
   color: #000000;
   text-decoration: none; }
   .btn-link:hover {
-    color: #f098bc;
+    color: black;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline; }
@@ -3569,7 +3545,7 @@ fieldset:disabled a.btn {
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #f098bc;
+    color: #495057;
     background-color: white;
     border-color: #dee2e6 #dee2e6 white; }
   .nav-tabs .dropdown-menu {
@@ -3963,20 +3939,20 @@ fieldset:disabled a.btn {
     .navbar-expand .navbar-toggler {
       display: none; }
   .navbar-light .navbar-brand {
-    color: #f098bc; }
+    color: rgba(0, 0, 0, 0.9); }
     .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-      color: #f098bc; }
+      color: rgba(0, 0, 0, 0.9); }
     .navbar-light .navbar-nav .nav-link {
       color: rgba(0, 0, 0, 0.5); }
       .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-        color: #f098bc; }
+        color: rgba(0, 0, 0, 0.7); }
       .navbar-light .navbar-nav .nav-link.disabled {
         color: rgba(0, 0, 0, 0.3); }
     .navbar-light .navbar-nav .show > .nav-link,
     .navbar-light .navbar-nav .active > .nav-link,
     .navbar-light .navbar-nav .nav-link.show,
     .navbar-light .navbar-nav .nav-link.active {
-      color: #f098bc; }
+      color: rgba(0, 0, 0, 0.9); }
   .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 0, 0, 0.1); }
@@ -3985,24 +3961,24 @@ fieldset:disabled a.btn {
   .navbar-light .navbar-text {
     color: rgba(0, 0, 0, 0.5); }
     .navbar-light .navbar-text a {
-      color: #f098bc; }
+      color: rgba(0, 0, 0, 0.9); }
       .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-        color: #f098bc; }
+        color: rgba(0, 0, 0, 0.9); }
   .navbar-dark .navbar-brand {
-    color: #f098bc; }
+    color: white; }
     .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-      color: #f098bc; }
+      color: white; }
     .navbar-dark .navbar-nav .nav-link {
       color: rgba(255, 255, 255, 0.5); }
       .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-        color: #f098bc; }
+        color: rgba(255, 255, 255, 0.75); }
       .navbar-dark .navbar-nav .nav-link.disabled {
         color: rgba(255, 255, 255, 0.25); }
     .navbar-dark .navbar-nav .show > .nav-link,
     .navbar-dark .navbar-nav .active > .nav-link,
     .navbar-dark .navbar-nav .nav-link.show,
     .navbar-dark .navbar-nav .nav-link.active {
-      color: #f098bc; }
+      color: white; }
   .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.1); }
@@ -4011,9 +3987,9 @@ fieldset:disabled a.btn {
   .navbar-dark .navbar-text {
     color: rgba(255, 255, 255, 0.5); }
     .navbar-dark .navbar-text a {
-      color: #f098bc; }
+      color: white; }
       .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-        color: #f098bc; }
+        color: white; }
 
 .card {
   position: relative;
@@ -4249,7 +4225,7 @@ fieldset:disabled a.btn {
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #f098bc;
+    color: black;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }

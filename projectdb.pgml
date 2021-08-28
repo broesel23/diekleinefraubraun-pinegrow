@@ -32,7 +32,7 @@
             </dmdesignskill>
             <dmdesignskill skill="fonts" text_family="&quot;Courier New&quot;, Courier, monospace" headings_family="&quot;Courier New&quot;, Courier, monospace" headings_color="$secondary"></dmdesignskill>
             <dmdesignskill skill="headings" h1_color="$secondary" h2_color="$secondary" h3_color="$secondary" h4_color="$secondary"></dmdesignskill>
-            <dmdesignskill skill="background" image_for_colors="true" advanced="true" filter_blur="0" filter_brightness="100" filter_contrast="100" filter_grayscale="0" filter_hue-rotate="0" filter_invert="0" filter_opacity="100" filter_saturate="100" filter_sepia="0"></dmdesignskill>
+            <dmdesignskill skill="background" image_for_colors="true" advanced="true" filter_blur="0" filter_brightness="100" filter_contrast="100" filter_grayscale="0" filter_hue-rotate="0" filter_invert="0" filter_opacity="100" filter_saturate="100" filter_sepia="0" color="$secondary"></dmdesignskill>
             <dmdesignskill skill="bootstrap" gutter="0" responsive_fonts="1"></dmdesignskill>
         </dmdesign>
     </dmdesigns>

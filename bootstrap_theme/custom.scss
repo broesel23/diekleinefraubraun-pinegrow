@@ -11,6 +11,7 @@ $dark: #343a40;
 $font-family-sans-serif: "Courier New", Courier, monospace;
 $headings-font-family: "Courier New", Courier, monospace;
 $headings-color: $secondary;
+$body-bg: $white;
 
 html {
     font-size: 100% !important;
@@ -28,49 +29,6 @@ $enable-shadows: false;
 $enable-responsive-font-sizes: true;
 $enable-gradients: false;
 $min-contrast-ratio: 4.5;
-$gray-700: #495057;
-$black: #000;
-$blue: #007bff;
-$primary: #000000;
-$link-color: $primary;
-$link-hover-color: $secondary;
-$nav-tabs-link-active-color: $secondary;
-$navbar-light-hover-color: $secondary;
-$navbar-light-active-color: $secondary;
-$navbar-dark-hover-color: $secondary;
-$navbar-dark-active-color: $secondary;
-
-.navbar .nav-item:hover .dropdown-menu {
-    display: block;
-}
-
-.navbar-nav active,
-.navbar-nav .dropdown-menu>a:hover {
-    background-color: #f3b3ce;
-
-    /* background-color: #f098bc; */
-}
-
-h1 {
-    color: $secondary !important;
-}
-
-h2 {
-    color: $secondary !important;
-}
-
-h3 {
-    color: $secondary !important;
-}
-
-h4 {
-    color: $secondary !important;
-}
-
-body,
-html {
-    min-height: 100vh;
-}
 
 /* Pinegrow generated Theme Init End */
 /* Bootstrap theme customized with Pinegrow Web Editor */
