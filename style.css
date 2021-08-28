@@ -29,6 +29,11 @@ body {
 
 .tk-slides-caption {
     grid-area: slides-caption-top / slides-left / slides-caption-bottom / slides-right;
+    z-index: 999;
+    top: 100px;
+    color: black;
+    text-align: left;
+    margin-left: 150px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -103,8 +108,9 @@ body {
 
 .navbar {
     grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
-    position: fixed;
+    z-index: 9999;
 
+    /* position: fixed; */
     /* margin-left: 210px;
     margin-top: 15px; */
 }
@@ -137,6 +143,7 @@ body {
     bottom: 70%; */
     left: 20%;
     bottom: 93%;
+    z-index: 999;
 }
 
 .carousel-control-prev {
@@ -144,15 +151,16 @@ body {
     /* left:-30%;
 	bottom: 70%; */
     bottom: 93%;
+    z-index: 999;
 }
 
 button.btn-customized:hover,
-button.btn-customized:active,
-button.btn-customized:focus,
-button.btn-customized:active:focus,
-button.btn-customized.active:focus,
-button.btn.btn-primary:not(:disabled):not(.disabled):active,
-button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+button.btn-customized:active,
+button.btn-customized:focus,
+button.btn-customized:active:focus,
+button.btn-customized.active:focus,
+button.btn.btn-primary:not(:disabled):not(.disabled):active,
+button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
     outline: 0;
     background: #f098bc ;
     background: rgba(240, 152, 188, 0.827);
@@ -194,5 +202,6 @@ button.btn-customized {
 } */
 .tk-slide-and-caption-area-container {
     grid-area: slides-caption-top / slides-left / slides-bottom / slides-right;
+    z-index: 99;
 }
 

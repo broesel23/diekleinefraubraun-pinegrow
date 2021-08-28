@@ -146,7 +146,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: black;
+    color: #e65591;
     text-decoration: underline; }
 
 a:not([href]):not([class]) {
@@ -2630,7 +2630,7 @@ fieldset:disabled a.btn {
   color: #000000;
   text-decoration: none; }
   .btn-link:hover {
-    color: black;
+    color: #e65591;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline; }
@@ -4225,7 +4225,7 @@ fieldset:disabled a.btn {
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: black;
+    color: #e65591;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -5484,6 +5484,17 @@ a.close.disabled {
   .carousel-indicators .active {
     opacity: 1; }
 
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center; }
+
 @-webkit-keyframes spinner-border {
   to {
     -webkit-transform: rotate(360deg);
@@ -6639,6 +6650,10 @@ a.close.disabled {
   position: sticky !important; }
 
 .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 1030; }
 
 .fixed-bottom {
