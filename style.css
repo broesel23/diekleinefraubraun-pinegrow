@@ -212,3 +212,7 @@ button.btn-customized {
     z-index: 99;
 }
 
+hr {
+    border-top: 2px solid #f098bc;
+}
+
