@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-        <meta name="description" content="diekleinefraubraun, sie selbst"> 
+        <meta name="description" content="diekleinefraubraun"> 
         <meta name="author" content="broesel23"> 
         <title>diekleinefraubraun</title>         
         <!-- Bootstrap core CSS -->         
@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="pgia/components/slider.css">
     </head>     
     <body>
-        <nav class="bg-white navbar navbar-expand-md" style="z-index:9999;"> 
+        <nav class="bg-white navbar navbar-expand-md"> 
             <button class="navbar-light bg-white navbar-toggler" type="button" title="Klick => Feststellen" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-light navbar-toggler-icon"></span> 
             </button>             
@@ -24,7 +24,7 @@
                 <ul class="navbar-nav mr-auto">
                     <a class="nav-link" href="https://www.diekleinefraubraun.de/wasdiewaendehoerten.html" title="Home" data-pgc-field="menu-main-item0"><img src="assets/logo_diekleinefraubraun_rosa.svg" class="tk-logo" alt="Home"></a>
                     <li class="active dropdown dropdown-hover dropdown-hover-menu nav-item" data-pgc-field="menu-main-item1">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Klick => Feststellen" data-pgc-field="menu-item1">&nbsp;&nbsp;Werkschau</a>
+                        <a class="active dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Klick => Feststellen" data-pgc-field="menu-item1">&nbsp;&nbsp;Werkschau</a>
                         <div class="dropdown-menu dropdown-hover-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Der Geist erhebt sich über die Materie (Installation)</a>
                             <a class="dropdown-item" href="./wasdiewaendehoerten.html">WAS DIE WÄNDE HÖRTEN (Installation)</a>
@@ -40,38 +40,51 @@
                             <a class="dropdown-item" href="#">Le desir eternel</a>
                         </div>
                     </li>                     
-                    <a class="active nav-link" href="https://www.diekleinefraubraun.de/sieselbst.html" data-pgc-field="menu-main-item2">Sie&nbsp;selbst</a>
+                    <a class="nav-link" href="https://www.diekleinefraubraun.de/sieselbst.html" data-pgc-field="menu-main-item2">Sie&nbsp;selbst</a>
                     <a class="nav-link" href="https://www.diekleinefraubraun.de/links.html" data-pgc-field="menu-main-item3">Links</a>
                     <a class="nav-link" href="https://www.diekleinefraubraun.de/impressum.html" data-pgc-field="menu-main-item4">Kontakt/Impressum</a> 
                 </ul>                 
             </div>
         </nav>
         <div class="container sidebar" data-pgc-field="sidebar">
-            <br>
-            <br>
+            <div class="pause-cycle-buttons">
+                <br>Slideshow play/pause
+                <br>
+                <button type="button" class="btn btn-primary btn-customized btn-cycle disabled font-size:40px">
+                    <strong>play</strong> 
+                    <!-- >&#x25b8 -->
+                </button>
+                <button type="button" class="btn btn-primary btn-customized btn-pause">
+                    <strong>pause</strong> 
+                    <!-- >&#x23f8 -->
+                </button>                 
+            </div>
             <br>
             <hr>
-            <p>diekleinefraubraun findet
-merkwürdige Sachen, sammelt 
-Briefmarken und schafft Ordnung.
-Sie lebt in Berlin.</p>
+            <p>Le voyage d'une nuit, causé par la vue d'un homme musculeux</p>
             <hr>
         </div>
         <div class="container tk-slide-and-caption-area-container" data-pgc-field="slide-and-caption-area">
-            <h2>diekleinefraubraun</h2>
-            <br>
-            <img src="diekleinefraubraun_sieselbst.jpg" alt="sie selbst" width="70%" class="d-block">
             <p></p>
         </div>         
         <div id="slider_captions" class="tk-slides-caption" data-pgc-field="slider_captions">
-</div>
+            <div>
+                <div id="caption-0" class="carousel-caption tk-slides-caption">
+                    <h2>Le Voyage</h2>
+                    <p>1 / 1</p>
+                </div>
+            </div>
+        </div>
         <div id="slider" class="carousel slide" data-ride="carousel" data-interval="6000"> 
             <div class="carousel-inner" data-pgc-field="slides"> 
                 <div class="carousel-item active"> 
-</div>
+                    <img src="werkschau/levoyage/le_voyage.jpg" width="80%" class="d-block" alt="Der Ausstellungsraum, Die Ordnung der Dinge">
+                </div>
             </div>
-            <div data-pgc-field="slider-controls">
-</div>
+            <div data-pgc-field="slider-controls"> 
+                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev"> <span class="bg-secondary carousel-control-prev-icon text-secondary" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
+                <a class="carousel-control-next" href="#slider" role="button" data-slide="next"> <span class="bg-secondary carousel-control-next-icon text-secondary" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+            </div>
         </div>
         <div class="footer">
             <footer> 
