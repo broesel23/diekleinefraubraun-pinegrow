@@ -132,6 +132,7 @@ body {
 
 .footer {
     grid-area: footer-top / navbar-left / footer-bottom / slides-right;
+    z-index: 9999;
 }
 
 .float-right {
