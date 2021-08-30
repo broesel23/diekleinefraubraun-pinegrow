@@ -55,7 +55,18 @@ body {
     top: 100px;
     color: black;
     text-align: left;
-    margin-left: 150px;
+    margin-left: 1px;
+}
+
+@media (min-width:992px) {
+    .tk-slides-caption {
+        grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
+        z-index: 999;
+        top: 100px;
+        color: black;
+        text-align: left;
+        margin-left: 150px;
+    }
 }
 
 /* Declare heights because of positioning of img element */
@@ -136,7 +147,7 @@ body {
 }
 
 .navbar {
-    grid-area: navbar-top / 1 / navbar-bottom / slides-right;
+    grid-area: navbar-top / slides-left / navbar-bottom / slides-right;
     z-index: 9999;
 
     /* position: fixed; */
@@ -144,17 +155,47 @@ body {
     margin-top: 15px; */
 }
 
+@media (min-width:992px) {
+    .navbar {
+        grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
+        z-index: 9999;
+
+        /* position: fixed; */
+        /* margin-left: 210px;
+    margin-top: 15px; */
+    }
+}
+
 .sidebar {
-    grid-area: slides-caption-top / 1 / slides-bottom / sidebar-right;
+    grid-area: sidebar-top / 1 / sidebar-bottom / sidebar-right;
+}
+
+@media (min-width:992px) {
+    .sidebar {
+        grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right;
+    }
 }
 
 #slider_captions {
     grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
 }
 
+@media (min-width:992px) {
+    #slider_captions {
+        grid-area: slides-caption-top / navbar-left / slides-caption-bottom / slides-right;
+    }
+}
+
 .footer {
-    grid-area: footer-top / navbar-left / footer-bottom / slides-right;
+    grid-area: footer-top / slides-left / footer-bottom / slides-right;
     z-index: 9999;
+}
+
+@media (min-width:992px) {
+    .footer {
+        grid-area: footer-top / navbar-left / footer-bottom / slides-right;
+        z-index: 9999;
+    }
 }
 
 .float-right {
@@ -176,12 +217,33 @@ body {
     z-index: 999;
 }
 
+@media (min-width:992px) {
+    .carousel-control-next {
+        /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+        /* left: -20%;
+    bottom: 70%; */
+        left: 20%;
+        bottom: 93%;
+        z-index: 999;
+    }
+}
+
 .carousel-control-prev {
     /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
     /* left:-30%;
 	bottom: 70%; */
     bottom: 93%;
     z-index: 999;
+}
+
+@media (min-width:992px) {
+    .carousel-control-prev {
+        /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+        /* left:-30%;
+	bottom: 70%; */
+        bottom: 93%;
+        z-index: 999;
+    }
 }
 
 button.btn-customized:hover,
@@ -240,11 +302,7 @@ hr {
 }
 
 .videoandaudio-zindex {
-    z-index: 99999;
-}
-
-.videoandaudio-zindex {
-    z-index: 99999;
+    z-index: 999;
 }
 
 .slider-text {
