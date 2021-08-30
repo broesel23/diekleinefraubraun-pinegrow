@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="pgia/components/slider.css">
     </head>     
     <body>
-        <nav class="bg-white navbar navbar-expand-md"> 
+        <nav class="bg-white navbar navbar-expand-md" data-pg-collapsed> 
             <button class="navbar-light bg-white navbar-toggler" type="button" title="Klick => Feststellen" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-light navbar-toggler-icon"></span> 
             </button>             
@@ -46,7 +46,7 @@
                 </ul>                 
             </div>
         </nav>
-        <div class="container sidebar" data-pgc-edit="sidebar">
+        <div class="container sidebar" data-pgc-edit="sidebar" data-pg-collapsed>
             <div class="pause-cycle-buttons">
                 <br>Slideshow play/pause
                 <br>
@@ -65,10 +65,10 @@
             <p>Sidebar für feststehenden Text zu den jeweils rechts angezeigten Inhalten (Bilder, Texte)</p>
             <p>Sidebar für feststehenden Text zu den jeweils rechts angezeigten Inhalten (Bilder, Texte)</p>
         </div>
-        <div class="container tk-slide-and-caption-area-container" data-pgc-edit="slide-and-caption-area">
+        <div class="container tk-slide-and-caption-area-container" data-pgc-edit="slide-and-caption-area" data-pg-collapsed>
             <p></p>
         </div>         
-        <div id="slider_captions" data-pgc-edit="slider_captions" class="tk-slides-caption">
+        <div id="slider_captions" data-pgc-edit="slider_captions" class="tk-slides-caption" data-pg-collapsed>
             <div>
                 <div id="caption-0" class="carousel-caption tk-slides-caption">
                     <h2>diekleinefraubraun</h2>
@@ -88,26 +88,58 @@
                 </div>
             </div>             
         </div>
-        <div id="slider" class="carousel slide" data-ride="carousel" data-interval="6000"> 
+        <div id="slider" class="carousel slide" data-ride="carousel" data-interval="6000" data-pg-collapsed> 
             <div class="carousel-inner" data-pgc-edit="slides"> 
-                <div class="carousel-item active"> 
+                <div class="carousel-item active" data-pgc-edit="slider-element-active"> 
                     <img src="diekleinefraubraun_sieselbst.jpg" alt="sie selbst" width="70%" class="d-block">
                 </div>                 
-                <div class="carousel-item"> 
+                <div class="carousel-item" data-pgc-edit="slider-element"> 
                     <img class="d-block w-100" src="werkschau/ledesir/le_desir_eternel.jpg" alt="le desir eternel">
                 </div>                 
-                <div class="carousel-item videoandaudio-zindex" id="video"> 
+                <div class="carousel-item videoandaudio-zindex" id="video" data-pg-collapsed> 
                     <video controls>
                         <source src="big_buck_bunny.webm" width="100%" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="carousel-item videoandaudio-zindex"> 
+                <div class="carousel-item videoandaudio-zindex" data-pg-collapsed> 
                     <audio controls>
                         <!-- <source src="horse.mp3" type="audio/mpeg"/> -->
                         <source src="werkschau/wasdiewaendehoerten/wind.wav" type="audio/wav"/>
                     </audio>
                     <img src="werkschau/wasdiewaendehoerten/wasdiewaendehoerten07.jpg" width="70%" alt="sie selbst" class="d-block">
+                </div>
+                <div class="carousel-item"> 
+                    <div class="slider-text">
+                        <p><span class="slider-text-rosa">Der Geist erhebt sich über die Materie</span> ist eine Installation zur Sehnsucht. </p>
+                        <p>Hierbei lasse ich im Maßstab 1 : 2 ein Flugzeug von der Decke stürzen. Es handelt sich um das 1903 konstruierte Modell der Gebrüder Wright, denen damit der erste lenkbare Flug gelang. Im Propellerwind des Flugzeuges wirbeln die Konstruktionszeichnungen. </p>
+                        <p>An den Wänden des Ausstellungsraumes jedoch hängen fein säuberlich die Blätter der intimen Aufzeichnungen des Orville Wright, des jüngeren der beiden Brüder. </p>
+                        <p>Das Foto der Brüder, wie sie in Anzug und Melone zu ihrem Flugzeug schreiten, hat sich ins ikonographische Gedächtnis eingraviert. Es steht für die Menschheitssehnsucht die Schwerkraft zu überwinden und zu beherrschen. Unzählige wissenschaftliche, populärwissenschaftliche und biografische Schriften setzen sich mit Leben und Werk der Brüder auseinander. Dabei ist festzustellen, dass so gut wie nichts Persönliches über diese beiden Männer bekannt ist. Sie scheinen außerhalb der Fliegerei von keinen Leidenschaften getrieben worden zu sein. Nichts wird berichtet von emotionalen Bindungen außerhalb der Familie. </p>
+                        <p>Mit der Veröffentlichung der intimen Tagebücher Orville Wrights fülle ich eben diese Leerstelle und zeige, dass dieser Mensch, der eine große Sehnsucht der Menschheit gestillt hat, persönlich von ganz anderen Sehnsüchten getrieben wurde. Sehnsüchte, die für viele von uns keine Träume, sondern Normalität sind: Intimität, Geborgenheit, Verstehen und Verständigung. </p>
+                        <p> 
+        Um meine Ausstellung zu verstehen, ist es überhaupt nicht notwendig irgendetwas über Wilbur und Orville Wright zu wissen. Es genügt völlig, das Arrangement im Raum auf sich wirken zu lassen, um zu begreifen, dass es hier um Sehnsucht geht. Das Flugzeug wird wie ein gefangener Vogel in den Raum gesperrt, während das normalerweise verborgene „Gedankenfach“ (Wilhelm Busch), gleichsam nach außen gestülpt  und für jedermann sichtbar ist. </p>
+                        <p> <span class="slider-text-rosa">Der Geist erhebt sich über die Materie</span> ist ein weiterer Teil meiner Installationsserie „Das Gemüt“. </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Das Foto der Brüder, wie sie in Anzug und Melone zu ihrem Flugzeug schreiten, hat sich ins ikonographische Gedächtnis eingraviert. Es steht für die Menschheitssehnsucht die Schwerkraft zu überwinden und zu beherrschen. Unzählige wissenschaftliche, populärwissenschaftliche und biografische Schriften setzen sich mit Leben und Werk der Brüder auseinander. Dabei ist festzustellen, dass so gut wie nichts Persönliches über diese beiden Männer bekannt ist. Sie scheinen außerhalb der Fliegerei von keinen Leidenschaften getrieben worden zu sein. Nichts wird berichtet von emotionalen Bindungen außerhalb der Familie. </p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Das Foto der Brüder, wie sie in Anzug und Melone zu ihrem Flugzeug schreiten, hat sich ins ikonographische Gedächtnis eingraviert. Es steht für die Menschheitssehnsucht die Schwerkraft zu überwinden und zu beherrschen. Unzählige wissenschaftliche, populärwissenschaftliche und biografische Schriften setzen sich mit Leben und Werk der Brüder auseinander. Dabei ist festzustellen, dass so gut wie nichts Persönliches über diese beiden Männer bekannt ist. Sie scheinen außerhalb der Fliegerei von keinen Leidenschaften getrieben worden zu sein. Nichts wird berichtet von emotionalen Bindungen außerhalb der Familie. </p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Das Foto der Brüder, wie sie in Anzug und Melone zu ihrem Flugzeug schreiten, hat sich ins ikonographische Gedächtnis eingraviert. Es steht für die Menschheitssehnsucht die Schwerkraft zu überwinden und zu beherrschen. Unzählige wissenschaftliche, populärwissenschaftliche und biografische Schriften setzen sich mit Leben und Werk der Brüder auseinander. Dabei ist festzustellen, dass so gut wie nichts Persönliches über diese beiden Männer bekannt ist. Sie scheinen außerhalb der Fliegerei von keinen Leidenschaften getrieben worden zu sein. Nichts wird berichtet von emotionalen Bindungen außerhalb der Familie. </p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Das Foto der Brüder, wie sie in Anzug und Melone zu ihrem Flugzeug schreiten, hat sich ins ikonographische Gedächtnis eingraviert. Es steht für die Menschheitssehnsucht die Schwerkraft zu überwinden und zu beherrschen. Unzählige wissenschaftliche, populärwissenschaftliche und biografische Schriften setzen sich mit Leben und Werk der Brüder auseinander. Dabei ist festzustellen, dass so gut wie nichts Persönliches über diese beiden Männer bekannt ist. Sie scheinen außerhalb der Fliegerei von keinen Leidenschaften getrieben worden zu sein. Nichts wird berichtet von emotionalen Bindungen außerhalb der Familie. </p>
+                    </div>
                 </div>
             </div>
             <div data-pgc-edit="slider-controls"> 
@@ -115,7 +147,7 @@
                 <a class="carousel-control-next" href="#slider" role="button" data-slide="next"> <span class="bg-secondary carousel-control-next-icon text-secondary" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" data-pg-collapsed>
             <footer> 
                 <p class="float-right"><a href="#" class="float-right text-secondary">Nach oben</a></p> 
                 <p class="copyright">&copy; 2021 Thordis König&middot; <a href="./datenschutz.html" target="_self" class="text-secondary">Datenschutz</a></p> 
