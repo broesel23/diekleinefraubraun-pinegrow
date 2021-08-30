@@ -136,7 +136,7 @@ body {
 }
 
 .navbar {
-    grid-area: navbar-top / slides-left / navbar-bottom / slides-right;
+    grid-area: navbar-top / 1 / navbar-bottom / slides-right;
     z-index: 9999;
 
     /* position: fixed; */
@@ -153,7 +153,7 @@ body {
 }
 
 .footer {
-    grid-area: footer-top / slides-left / footer-bottom / slides-right;
+    grid-area: footer-top / navbar-left / footer-bottom / slides-right;
     z-index: 9999;
 }
 
