@@ -145,7 +145,7 @@ body {
 }
 
 .sidebar {
-    grid-area: sidebar-top / slides-left / slides-bottom / sidebar-right;
+    grid-area: slides-caption-top / 1 / slides-bottom / sidebar-right;
 }
 
 #slider_captions {
