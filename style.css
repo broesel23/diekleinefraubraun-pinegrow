@@ -10,18 +10,7 @@ body {
     grid-gap: 30px;
 }
 
-@media (min-width:992px) {
-    body {
-        /* color: #5a5a5a; */
-        display: grid;
-        grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
-        grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
-        grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
-        grid-gap: 30px;
-    }
-}
-
-@media (min-width:1400px) {
+@media (min-width:1200px) {
     body {
         /* color: #5a5a5a; */
         display: grid;
@@ -58,7 +47,7 @@ body {
     margin-left: 1px;
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .tk-slides-caption {
         grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
         z-index: 999;
@@ -155,7 +144,7 @@ body {
     margin-top: 15px; */
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .navbar {
         grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
         z-index: 9999;
@@ -170,7 +159,7 @@ body {
     grid-area: sidebar-top / 1 / sidebar-bottom / sidebar-right;
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .sidebar {
         grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right;
     }
@@ -180,7 +169,7 @@ body {
     grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     #slider_captions {
         grid-area: slides-caption-top / navbar-left / slides-caption-bottom / slides-right;
     }
@@ -191,7 +180,7 @@ body {
     z-index: 9999;
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .footer {
         grid-area: footer-top / navbar-left / footer-bottom / slides-right;
         z-index: 9999;
@@ -217,7 +206,7 @@ body {
     z-index: 999;
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .carousel-control-next {
         /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
         /* left: -20%;
@@ -236,7 +225,7 @@ body {
     z-index: 999;
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
     .carousel-control-prev {
         /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
         /* left:-30%;
