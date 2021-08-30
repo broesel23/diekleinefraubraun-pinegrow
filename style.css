@@ -4,10 +4,32 @@
 body {
     /* color: #5a5a5a; */
     display: grid;
-    grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
-    grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
-    grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
+    grid-template-columns: 20px [slides-left-start slides-caption-start sidebar-left-start] auto [slides-right-end navbar-right-end footer-right-end slides-caption-right-end sidebar-right-end] 20px;
+    grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [sidebar-top-start slides-bottom-end] auto [footer-top-start sidebar-bottom-end] 100px [footer-bottom-end];
+    grid-template-areas: 'border-lt navbar border-rt' 'border-lt slides-caption border-rt' 'border-lt slides border-rt' 'border-lt sidebar border-rt' 'border-lt footer border-rt';
     grid-gap: 30px;
+}
+
+@media (min-width:992px) {
+    body {
+        /* color: #5a5a5a; */
+        display: grid;
+        grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
+        grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
+        grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
+        grid-gap: 30px;
+    }
+}
+
+@media (min-width:1400px) {
+    body {
+        /* color: #5a5a5a; */
+        display: grid;
+        grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
+        grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
+        grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
+        grid-gap: 30px;
+    }
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -15,7 +37,7 @@ body {
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
-    grid-area: slides-top / slides-left/ slides-bottom / slides-right;
+    grid-area: slides-top / slides-left / slides-bottom / slides-right;
 }
 
 /* Since positioning the image, we need to help out the caption 
@@ -28,7 +50,7 @@ body {
 }
 
 .tk-slides-caption {
-    grid-area: slides-caption-top / slides-left / slides-caption-bottom / slides-right;
+    grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
     z-index: 999;
     top: 100px;
     color: black;
@@ -114,7 +136,7 @@ body {
 }
 
 .navbar {
-    grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
+    grid-area: navbar-top / slides-left / navbar-bottom / slides-right;
     z-index: 9999;
 
     /* position: fixed; */
@@ -123,15 +145,15 @@ body {
 }
 
 .sidebar {
-    grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right;
+    grid-area: sidebar-top / slides-left / slides-bottom / sidebar-right;
 }
 
 #slider_captions {
-    grid-area: slides-caption-top / navbar-left / slides-caption-bottom / slides-right;
+    grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
 }
 
 .footer {
-    grid-area: footer-top / navbar-left / footer-bottom / slides-right;
+    grid-area: footer-top / slides-left / footer-bottom / slides-right;
     z-index: 9999;
 }
 
