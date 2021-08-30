@@ -10,7 +10,7 @@ body {
     grid-gap: 30px;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     body {
         /* color: #5a5a5a; */
         display: grid;
@@ -47,7 +47,7 @@ body {
     margin-left: 1px;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     .tk-slides-caption {
         grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
         z-index: 999;
@@ -144,7 +144,7 @@ body {
     margin-top: 15px; */
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     .navbar {
         grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
         z-index: 9999;
@@ -159,7 +159,7 @@ body {
     grid-area: sidebar-top / 1 / sidebar-bottom / sidebar-right;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     .sidebar {
         grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right;
     }
@@ -169,7 +169,7 @@ body {
     grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     #slider_captions {
         grid-area: slides-caption-top / navbar-left / slides-caption-bottom / slides-right;
     }
@@ -180,7 +180,7 @@ body {
     z-index: 9999;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     .footer {
         grid-area: footer-top / navbar-left / footer-bottom / slides-right;
         z-index: 9999;
@@ -206,7 +206,7 @@ body {
     z-index: 999;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     .carousel-control-next {
         /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
         /* left: -20%;
@@ -225,7 +225,7 @@ body {
     z-index: 999;
 }
 
-@media only screen and (min-width:992px) and (orientation:landscape) {
+@media only desktop and (min-width:992px) and (orientation:landscape) {
     .carousel-control-prev {
         /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
         /* left:-30%;
