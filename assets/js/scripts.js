@@ -20,10 +20,10 @@ $('.btn-customized').on('click', function(){
     if( ! $(this).hasClass('disabled') ) {
  
         if( $(this).hasClass('btn-pause') ) {
-            $('.carousel').carousel('pause');
+            $('#slider').carousel('pause'); /* .carousel */
         }
         else {
-            $('.carousel').carousel('cycle');
+            $('#slider').carousel('cycle');
         }
  
         $('.btn-pause, .btn-cycle').toggleClass('disabled');

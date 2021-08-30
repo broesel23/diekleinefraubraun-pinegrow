@@ -1,0 +1,308 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+    /* color: #5a5a5a; */
+    display: grid;
+    grid-template-columns: 20px [slides-left-start slides-caption-start sidebar-left-start] auto [slides-right-end navbar-right-end footer-right-end slides-caption-right-end sidebar-right-end] 20px;
+    grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [sidebar-top-start slides-bottom-end] auto [footer-top-start sidebar-bottom-end] 100px [footer-bottom-end];
+    grid-template-areas: 'border-lt navbar border-rt' 'border-lt slides-caption border-rt' 'border-lt slides border-rt' 'border-lt sidebar border-rt' 'border-lt footer border-rt';
+    grid-gap: 30px;
+}
+
+@media screen and (min-width:992px) {
+    body {
+        /* color: #5a5a5a; */
+        display: grid;
+        grid-template-columns: 20px [navbar-left-start footer-left-start sidebar-left-start] 220px [slides-left-start slides-caption-start sidebar-right-end] 3fr [slides-right-end navbar-right-end footer-right-end slides-caption-right-end] 20px;
+        grid-template-rows: [navbar-top-start] minmax(100px, 5%) [navbar-bottom-end slides-caption-top-start] 80px [slides-top-start slides-caption-bottom-end] auto [footer-top-start slides-bottom-end] 100px [footer-bottom-end];
+        grid-template-areas: 'border-lt navbar navbar border-rt' 'border-lt sidebar-left slides-caption border-rt' 'border-lt sidebar-left slides border-rt' 'border-lt footer footer border-rt';
+        grid-gap: 30px;
+    }
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+    grid-area: slides-top / slides-left / slides-bottom / slides-right;
+}
+
+/* Since positioning the image, we need to help out the caption 
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+} */
+.carousel-caption:not(#caption-0) {
+    display: none;
+}
+
+.tk-slides-caption {
+    grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
+    z-index: 999;
+    top: 100px;
+    color: black;
+    text-align: left;
+    margin-left: 1px;
+}
+
+@media screen and (min-width:992px) {
+    .tk-slides-caption {
+        grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
+        z-index: 999;
+        top: 100px;
+        color: black;
+        text-align: left;
+        margin-left: 150px;
+    }
+}
+
+/* Declare heights because of positioning of img element */
+/* .carousel-item {
+    min-height: 40rem;
+    min-width: 40rem; 
+    background-color: #ffffff;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+} */
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+/* .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+} */
+/* Featurettes
+------------------------- */
+/* .featurette-divider {
+    margin: 5rem 0;
+
+    /* Space out the Bootstrap <hr> more */
+/* } */
+/* Thin out the marketing headings */
+/* .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+} */
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+/* .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+} */
+.tk-logo {
+    align-self: center;
+    width: 150px;
+    height: 12px;
+    background: white;
+}
+
+@media only screen and (min-width: 960px) {
+    .dropdown-hover:hover .dropdown-hover-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+.navbar {
+    grid-area: navbar-top / slides-left / navbar-bottom / slides-right;
+    z-index: 9999;
+
+    /* position: fixed; */
+    /* margin-left: 210px;
+    margin-top: 15px; */
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        grid-area: navbar-top / navbar-left / navbar-bottom / slides-right;
+        z-index: 9999;
+
+        /* position: fixed; */
+        /* margin-left: 210px;
+    margin-top: 15px; */
+    }
+}
+
+.sidebar {
+    grid-area: sidebar-top / 1 / sidebar-bottom / sidebar-right;
+}
+
+@media screen and (min-width:992px) {
+    .sidebar {
+        grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right;
+    }
+}
+
+#slider_captions {
+    grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
+}
+
+@media screen and (min-width:992px) {
+    #slider_captions {
+        grid-area: slides-caption-top / navbar-left / slides-caption-bottom / slides-right;
+    }
+}
+
+.footer {
+    grid-area: footer-top / slides-left / footer-bottom / slides-right;
+    z-index: 9999;
+}
+
+@media screen and (min-width:992px) {
+    .footer {
+        grid-area: footer-top / navbar-left / footer-bottom / slides-right;
+        z-index: 9999;
+    }
+}
+
+.float-right {
+    margin-right: 20px;
+}
+
+/* * Solving carousel-controls not displayed on top of video/auto and their controls.
+ * Causes Footer not displayed seperated anymore. */
+.carousel-inner {
+    top: 8%;
+}
+
+.carousel-control-next {
+    /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+    /* left: -20%;
+    bottom: 70%; */
+    left: 20%;
+    bottom: 93%;
+    z-index: 999;
+}
+
+@media screen and (min-width:992px) {
+    .carousel-control-next {
+        /* grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+        /* left: -20%;
+    bottom: 70%; */
+        left: 20%;
+        bottom: 93%;
+        z-index: 999;
+    }
+}
+
+.carousel-control-prev {
+    /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+    /* left:-30%;
+	bottom: 70%; */
+    bottom: 93%;
+    z-index: 999;
+}
+
+@media screen and (min-width:992px) {
+    .carousel-control-prev {
+        /* grid funktioniert nicht. aber Prozente. grid-area: slides-caption-top / navbar-left / slides-bottom / sidebar-right; */
+        /* left:-30%;
+	bottom: 70%; */
+        bottom: 93%;
+        z-index: 999;
+    }
+}
+
+button.btn-customized:hover,
+button.btn-customized:active,
+button.btn-customized:focus,
+button.btn-customized:active:focus,
+button.btn-customized.active:focus,
+button.btn.btn-primary:not(:disabled):not(.disabled):active,
+button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+    outline: 0;
+    background: #f098bc ;
+    background: rgba(240, 152, 188, 0.827);
+    border: 0;
+    color: rgb(32, 31, 31);
+    box-shadow: none;
+}
+
+/* rgba(199, 191, 191, 0.793), also die zweite Farbe ist für den disabelten Zustand. */
+button.btn-customized.disabled {
+    background: rgb(240, 152, 188);
+    background: rgba(199, 191, 191, 0.793);
+}
+
+button.btn-customized {
+    width: 46px;
+    height: 46px;
+    margin-top: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+    background: rgba(240, 152, 188, 0.589);
+    border: 0;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 400;
+    color: #555;
+    line-height: 46px;
+    box-shadow: none;
+}
+
+.active {
+    color: #f098bc;
+}
+
+/* .pause-cycle-buttons {
+	margin-bottom: 5%;
+	margin-left: 40%;
+} */
+.tk-slide-and-caption-area-container {
+    grid-area: slides-caption-top / slides-left / slides-bottom / slides-right;
+    z-index: 99;
+}
+
+hr {
+    border-top: 1px solid #f098bc;
+}
+
+.videoandaudio-zindex {
+    z-index: 999;
+}
+
+.slider-text {
+    color: #000000;
+}
+
+.slider-text-rosa {
+    color: #f098bc;
+}
+
+.slider-text-rosa {
+    color: #f098bc;
+}
+
