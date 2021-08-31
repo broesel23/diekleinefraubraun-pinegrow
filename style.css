@@ -156,7 +156,7 @@ body {
 }
 
 .sidebar {
-    grid-area: sidebar-top / 1 / sidebar-bottom / sidebar-right;
+    grid-area: sidebar-top / slides-left / sidebar-bottom / sidebar-right;
 }
 
 @media screen and (min-width:992px) {
@@ -166,7 +166,7 @@ body {
 }
 
 #slider_captions {
-    grid-area: slides-caption-top / 1 / slides-caption-bottom / slides-right;
+    grid-area: slides-caption-top / slides-left / slides-caption-bottom / slides-right;
 }
 
 @media screen and (min-width:992px) {
