@@ -16,3 +16,19 @@ div.startimage {
     bg-color: $secondary;
 }
 
+.start-logo {
+    min-width: 120px;
+    max-width: 200px;
+    position: relative;
+}
+
+@media not screen and (max-width:992px) {
+    .start-logo {
+        min-width: 320px;
+        max-width: 500px;
+        position: relative;
+        left: 10%;
+    }
+}
+
+
