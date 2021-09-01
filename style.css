@@ -121,14 +121,7 @@ body {
         margin-top: 7rem;
     }
 } */
-.tk-logo {
-    align-self: center;
-    width: 150px;
-    height: 12px;
-    background: white;
-}
-
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 992px) {
     .dropdown-hover:hover .dropdown-hover-menu {
         display: block;
         margin-top: 0;
@@ -304,5 +297,29 @@ hr {
 
 .slider-text-rosa {
     color: #f098bc;
+}
+
+.tk-logo {
+    align-self: center;
+    width: 150px;
+    height: 12px;
+    background: white;
+}
+
+#navbarCollapse {
+    background-color: rgb(255, 255, 255);
+}
+
+@media not screen and (min-width:992px) {
+    #navbarCollapse {
+        background-color: rgb(248, 248, 248);
+    }
+
+    .tk-logo {
+        align-self: center;
+        width: 150px;
+        height: 12px;
+        background: rgb(248, 248, 248);
+    }
 }
 
