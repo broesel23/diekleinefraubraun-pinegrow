@@ -21,7 +21,7 @@
   -ms-transform: translateX(-50%);
   transform: translateY(-50%);
   transform: translateX(-50%);">
-            <img onclick="setTimeout(myFunction(), 4000);" src="assets/diekleinefraubraun_white_on_rosa.png" data-pg-ia='{"l":[{"name":"bb","trg":"mousedown","a":"bounceOut","rst":"true","sprop":"true"}]}' width="610"/>
+            <img id="logo" "onclick="setTimeout(delayFunction," 3000);" src="/assets/diekleinefraubraun_white_on_rosa.png" data-pg-ia='{"l":[{"name":"bb","trg":"mousedown","a":"bounceOut","rst":"true","sprop":"true"}]}' width="310"/>
         </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -32,6 +32,12 @@
         <script src="pgia/lib/pgia.js"></script>
         <script>
 function myFunction() {
+	p = Snap(1200,600);
+	var img = p.image('/assets/diekleinefraubraun_white_on_rosa.png', 250, 300, 305, 32);
+	
+	// var img = Snap("#logo");
+	// var img = Snap();
+	img.animate({x: 1500, y:-300}, 5000);
   /* location.replace("./wasdiewaendehoerten.html"); */
 }</script>
     </body>
