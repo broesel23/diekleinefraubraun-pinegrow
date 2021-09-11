@@ -1,6 +1,23 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+.anime {
+    min-width: 120px;
+    max-width: 200px;
+    position: relative;
+    animation: mover 3s linear;
+}
+
+@keyframes mover{
+    from {
+        transform: translate(0px,0px);
+    }
+
+    to {
+        transform: translate(300px,-350px);
+    }
+}
+
 div.startimage {
     text-align: center;
     position: absolute;
@@ -23,6 +40,14 @@ div.startimage {
 }
 
 @media not screen and (max-width:992px) {
+    .anime {
+        min-width: 320px;
+        max-width: 500px;
+        position: relative;
+        left: 10%;
+        animation: mover 2.95s linear;
+    }
+
     .start-logo {
         min-width: 320px;
         max-width: 500px;
