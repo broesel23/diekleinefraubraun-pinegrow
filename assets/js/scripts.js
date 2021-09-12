@@ -5,6 +5,10 @@ $("#slider").on('slide.bs.carousel', function(evt) {
     $('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
             $('#caption-'+step).fadeIn();
     });
+
+/* HIER MUSS AUCH DER Zustand von '.btn-customized' passend gesetzt werden. Falls der Button auf btn-pause war, muss passend getoggled werden... Noch genau anschauen!
+*/
+
 /*
     if ($('#video.carousel-item').hasClass('active')) {
                 $("#slider").carousel.slide.data-ride('paused');
